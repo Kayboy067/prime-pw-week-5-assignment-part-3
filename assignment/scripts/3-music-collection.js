@@ -18,3 +18,28 @@ console.log(addToCollection('Fall', 'Davido', 2019));
 console.log(addToCollection('No Guidance', 'Chris Brown feat Drake', 2020));
 console.log(collection); //end test
 
+//function to showCollection
+function showCollection(array){
+    console.log(showCollection, array.length);
+
+for (let showCollection of array) {
+    console.log(showCollection, collection);
+}
+} // loop over showCollection
+showCollection(collection); //end test
+
+// creating a function called findByArtist
+function findByArtist(artist) {
+    let result = [];
+for (let music of collection) {
+    if (music.artist === artist) {
+        result.push(music)
+    }
+}
+return result;
+}
+let music = findByArtist('Wizkid', 'Burna Boy')
+
+console.log(findByArtist,'Wizkid');
+console.log(findByArtist,'Burna Boy');
+
